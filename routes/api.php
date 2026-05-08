@@ -21,7 +21,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 //pour l'abriviation en utilise la route 
-//Route::apiRessource('articles',ArticleController::class);
+//Route::apiRessource('articles',ArticleController::class);     
+
 //Routes de controller Article API
 //Route pour afficher toutes les articles
 Route::get('/articles',[ArticleController::class,'index']);
